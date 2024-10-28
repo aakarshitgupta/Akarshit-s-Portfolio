@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akarshit's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="head">
         <nav>
-            <div class="logo">title</div>
+            <div class="logo">Akarshit Gupta</div>
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
+                <a href="#" class="a-nav">Home</a>
+                <a href="#" class="a-nav">About</a>
+                <a href="#" class="a-nav">Projects</a>
+                <a href="#" class="a-nav">Skills</a>
+                <a href="#" class="a-nav">Contact</a>
             </div>
             <div class="socials">
-                <i class="fa-brands fa-linkedin social"></i>
-                <i class="fa-brands fa-github social"></i>
-                <i class="fa-brands fa-instagram social"></i>
+                <a href="https://www.linkedin.com/in/aakarshitgupta/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+                <a href="https://github.com/aakarshitgupta" target="_blank"><i class="fa-brands fa-github social"></i></a>
+                <a href="https://www.instagram.com/_akarshitgupta/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
             </div>
         </nav>
     </div>
-    <div class="main"></div>
+    <div class="main">
+        <div class="outerbox">
+            <div class="lt">
+                <div class="box box1"><a href="" class="link-black">ABOUT ME</a></div>
+                <div class="box box2">
+                    <div class="eight">1</div>year of &nbsp;&nbsp;&nbsp;&nbsp; experience
+                </div>
+                <div class="box box3"></div>
+                <div class="box box4">
+                    <a href="Akarshit Resume.pdf" download="Akarshit Resume.pdf" class="link-black resume">
+                        <i class="fa-solid fa-angles-down down"></i>
+                        <div class="cv">Download CV</div>
+                    </a>
+
+                </div>
+                <div class="box box5"></div>
+                <div class="box box6">
+                    <div class="rotate">My Portfolio</div>
+                </div>
+                <div class="box box7 up-arrow"></div>
+                <div class="box box8 "><a href="" class=" hire">HIRE ME</a></div>
+            </div>
+            <div class="rt">
+                <p class="first-line">Hello I'm <span id="typed-output"></span></p>
+                <h2 class="heading">I'm a Full-Stack Developer and <div class="tilted">Software Engineer</div> Based in
+                    India.</h2>
+                <p class="about-lines">I'm a 3rd-year B.Tech student passionate about web development, especially in the
+                    MERN stack. Eager to explore new technologies, I continuously improve my skills through hands-on
+                    projects, driven to innovate and make meaningful tech contributions.</p>
+            </div>
+        </div>
+    </div>
+
+
     <div class="footer"></div>
+    <script>
+        const typed = new Typed("#typed-output", {
+            strings: ["Akarshit Gupta", "Full-stack Developer", "Software Engineer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
 </body>
+
 </html>
